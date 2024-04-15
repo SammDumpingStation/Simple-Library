@@ -6,19 +6,39 @@ app.set("view engine", "ejs");
 app.listen(3000);
 
 app.get("/", (req, res) => {
-  res.render("students-section");
+  const students = [
+    { fName: "Samm", lName: "Caagbay" },
+    { fName: "Seth", lName: "Agbay" },
+    { fName: "Samnyll", lName: "Fuscablo" },
+  ];
+  res.render("students-section", { students });
 });
 
 app.get("/students", (req, res) => {
-  res.render("students-section");
+  const students = [
+    { fName: "Samm", lName: "Caagbay" },
+    { fName: "Seth", lName: "Agbay" },
+    { fName: "Samnyll", lName: "Fuscablo" },
+  ];
+  res.render("students-section", { students });
 });
 
 app.get("/librarians", (req, res) => {
-  res.render("librarian-section");
+  const librarians = [
+    { fName: "Kleah", lName: "Alinob" },
+    { fName: "Stevenz", lName: "Kagbay" },
+    { fName: "Cream", lName: "Pomicpic" },
+  ];
+  res.render("librarian-section", { librarians });
 });
 
 app.get("/books", (req, res) => {
-  res.render("book-section");
+  const books = [
+    { bName: "Lord of Rings", bAuthor: "Hogwarts" },
+    { bName: "Harry Potter", bAuthor: "Stephen" },
+    { bName: "Bruh Moments", bAuthor: "Samm" },
+  ];
+  res.render("book-section", { books });
 });
 
 //404 page

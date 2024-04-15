@@ -58,7 +58,21 @@
             <li>Delete</li>
           </ul>
         </nav>
-        <div class="records-container"></div>        
+        <div class="records-container">
+          <% if (librarians.length != 0) { %>
+           <% librarians.forEach(librarian => { %>
+            <div class="records">
+              <p><%= librarian.fName %></p>
+              <p><%= librarian.lName %></p>
+              <button class="update">Update</button>
+              <button class="delete">Delete</button>
+            </div>
+           <% }) %>
+          <% } else {%>
+            <p>There is nothing Here!</p>  
+          <% } %>
+             
+        </div>        
       </div>
     </footer>
     <button class="button reset-button">Reset</button>

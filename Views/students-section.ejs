@@ -56,7 +56,18 @@
             <li>Delete</li>
           </ul>
         </nav>
-        <div class="records-container"></div>
+        <div class="records-container">
+          <% if (students.length != 0) { %> <% students.forEach(student => { %>
+          <div class="records">
+            <p><%= student.fName %></p>
+            <p><%= student.lName %></p>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+          </div>
+          <% }) %> <% } else { %>
+          <p>No Array is here!</p>
+          <% } %>
+        </div>
       </div>
     </footer>
     <button class="button reset-button">Reset</button>
@@ -64,5 +75,3 @@
     <!-- <script src="../JS-Files/students-records.js"></script> -->
   </body>
 </html>
-
-
