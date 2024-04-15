@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5fa;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #497adc;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(#e3d5d5, #565555);
+  box-shadow: 0 5px 10px rgba(10, 10, 10, 0.5);
+}
+
+main {
+  min-width: 30vw;
+}
+
+main > h1 {
+  text-align: center;
+}

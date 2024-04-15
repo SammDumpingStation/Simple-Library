@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS-Files/general.css" />
+    <link rel="stylesheet" href="../CSS-Files/navbar.css" />
+    <link rel="stylesheet" href="../CSS-Files/main.css" />
+    <link rel="stylesheet" href="../CSS-Files/footer.css" />
+    <link rel="stylesheet" href="../CSS-Files/media-query.css" />
+    <link rel="icon" href="../Image-Files/book-stack.png" type="image/x-icon" />
+    <title>Simple Library</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation">
+        <li><a href="/students" class="pad">Students</a></li>
+        <li><a href="/librarians" class="librarians-link">Librarians</a></li>
+        <li><a href="/books" class="pad">Books</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="title">Adding New Books</h1>
+      <form class="form">
+        <label class="label" for="title">Book Title</label>
+        <input
+          class="input book-title"
+          type="text"
+          name="title"
+          placeholder="Enter the Book Title"
+          required
+        />
+
+        <label class="label" for="author">Author Name</label>
+        <input
+          class="input book-author"
+          type="text"
+          name="author"
+          placeholder="Enter Author Name"
+          required
+        />
+
+        <div class="button-container">
+          <button type="button" class="button see-button">See Books</button>
+          <button type="button" class="button submit-button">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="inside-footer">
+        <nav class="see-records">
+          <ul class="ul-records">
+            <li>First Name</li>
+            <li>Last Name</li>
+            <li>Edit</li>
+            <li>Delete</li>
+          </ul>
+        </nav>
+        <div class="records-container"></div>
+      </div>
+    </footer>
+    <button class="button reset-button">Reset</button>
+    <!-- <script src="../JS-Files/book-records.js"></script> -->
+  </body>
+</html>

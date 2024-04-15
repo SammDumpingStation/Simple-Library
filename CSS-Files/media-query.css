@@ -1,0 +1,5 @@
+@media (max-width: 780px) {
+  .button-container {
+    flex-direction: column;
+  }
+}

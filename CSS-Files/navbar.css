@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  gap: 2em;
+  padding: 1em;
+  list-style: none;
+}
+
+.students-link,
+.books-link,
+.librarians-link {
+  padding: 0.7em 1em;
+  background-color: #497adc;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.pad {
+  padding: 0.7em 1em;
+  border: none;
+  border-radius: 20px;
+}
