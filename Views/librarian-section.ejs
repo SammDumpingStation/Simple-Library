@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS-Files/general.css">
-    <link rel="stylesheet" href="../CSS-Files/navbar.css" />
-    <link rel="stylesheet" href="../CSS-Files/main.css">
-    <link rel="stylesheet" href="../CSS-Files/footer.css">
-    <link rel="stylesheet" href="../CSS-Files/media-query.css">
-    <link rel="icon" href="../Image-Files/book-stack.png" type="image/x-icon" />
-    <title>Simple Library</title>
-  </head>
+<%- include('./Partials/head.ejs') %>
   <body>
-    <nav>
-      <ul class="navigation">
-        <li><a href="/students" class="pad">Students</a></li>
-        <li><a href="/librarians" class="librarians-link">Librarians</a></li>
-        <li><a href="/books" class="pad">Books</a></li>
-      </ul>
-    </nav>
+    <%- include('./Partials/navigation.ejs') %>
 
     <main>
       <h1 class="title">Adding New Librarians</h1>
@@ -40,9 +24,7 @@
         />
 
         <div class="button-container">
-          <button type="button" class="button see-button">
-            See Librarian
-          </button>
+          <button type="button" class="button see-button">See Librarian</button>
           <button type="button" class="button submit-button">Submit</button>
         </div>
       </form>
@@ -59,20 +41,18 @@
           </ul>
         </nav>
         <div class="records-container">
-          <% if (librarians.length != 0) { %>
-           <% librarians.forEach(librarian => { %>
-            <div class="records">
-              <p><%= librarian.fName %></p>
-              <p><%= librarian.lName %></p>
-              <button class="update">Update</button>
-              <button class="delete">Delete</button>
-            </div>
-           <% }) %>
-          <% } else {%>
-            <p>There is nothing Here!</p>  
+          <% if (librarians.length != 0) { %> <% librarians.forEach(librarian =>
+          { %>
+          <div class="records">
+            <p><%= librarian.fName %></p>
+            <p><%= librarian.lName %></p>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+          </div>
+          <% }) %> <% } else {%>
+          <p>There is nothing Here!</p>
           <% } %>
-             
-        </div>        
+        </div>
       </div>
     </footer>
     <button class="button reset-button">Reset</button>

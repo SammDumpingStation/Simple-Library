@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS-Files/general.css" />
-    <link rel="stylesheet" href="../CSS-Files/navbar.css" />
-    <link rel="stylesheet" href="../CSS-Files/main.css" />
-    <link rel="stylesheet" href="../CSS-Files/footer.css" />
-    <link rel="stylesheet" href="../CSS-Files/media-query.css" />
-    <link rel="icon" href="../Image-Files/book-stack.png" type="image/x-icon" />
-    <title>Simple Library</title>
-  </head>
+<%- include('./Partials/head.ejs') %>
   <body>
-    <nav>
-      <ul class="navigation">
-        <li><a href="/students" class="pad">Students</a></li>
-        <li><a href="/librarians" class="librarians-link">Librarians</a></li>
-        <li><a href="/books" class="pad">Books</a></li>
-      </ul>
-    </nav>
+
+    <%- include('./Partials/navigation.ejs') %>
 
     <main>
       <h1 class="title">Adding New Students</h1>
