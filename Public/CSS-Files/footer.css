@@ -7,9 +7,9 @@ footer {
   overflow: scroll;
 }
 
-/* .inside-footer {
+.inside-footer {
   display: none;
-} */
+}
 
 .ul-records,
 .records {

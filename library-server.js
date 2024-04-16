@@ -1,13 +1,25 @@
 const express = require("express");
 const morgan = require("morgan");
+const mongoose = require("mongoose");
 const app = express();
 
+const dbURI =
+  "mongodb+srv://caagbaysamm:Golem42069@librarymanagementsystem.fdtzg6f.mongodb.net/?retryWrites=true&w=majority&appName=LibraryManagementSystem";
+mongoose
+  .connect(dbURI)
+  .then((result) => {
+    console.log("connection successful");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 app.set("view engine", "ejs");
 
 app.listen(3000);
 
 app.use(express.static("Public/CSS-Files"));
 app.use(express.static("Public/Image-Files"));
+app.use(express.static("Public/JS-Files"));
 
 // app.use(morgan("dev"));
 
