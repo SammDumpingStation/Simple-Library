@@ -12,6 +12,20 @@
       "name": "localhostForLibrary",
       "database": "new_schema",
       "username": "root"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "LibraryManagementSystem",
+      "database": "LibrarySystem",
+      "username": "root",
+      "password": ""
     }
   ]
 }
